@@ -1,0 +1,40 @@
+{
+  "always_show_minimap_viewport": true,
+  "auto_complete": true,
+  "auto_complete_commit_on_tab": true,
+  "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+  "copy_with_empty_selection": true,
+  "ensure_newline_at_eof_on_save": true,
+  "font_face": "Fira Code",
+  "font_options":
+  [
+    "gray_antialias",
+    "subpixel_antialias"
+  ],
+  "font_size": 14,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "index_files": true,
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "overlay_scroll_bars": "enabled",
+  "rulers":
+  [
+    80
+  ],
+  "tab_size": 2,
+  "theme": "ayu-mirage.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "ui_big_tabs": true,
+  "ui_fix_tab_labels": true,
+  "ui_font_source_code_pro": true,
+  "word_wrap": "true"
+}

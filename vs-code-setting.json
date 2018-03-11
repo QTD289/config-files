@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "100",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.smoothScrolling": true,
+    "editor.minimap.showSlider": "always",
+    "editor.cursorBlinking": "smooth",
+    "explorer.confirmDelete": false,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "editor.wordWrap": "on",
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Darker"
+    },
+    "files.associations": {
+        "*.scss": "sass",
+        "*.js": "javascriptreact"
+    },
+    "material-icon-theme.hidesExplorerArrows": true,
+    "window.zoomLevel": 0,
+    "window.openFilesInNewWindow": "default",
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderIndentGuides": false,
+    "guides.active.color.dark": "rgba(255, 255, 255, 0.5)",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.activeIconPack": "react"
+}
