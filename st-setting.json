@@ -1,4 +1,5 @@
 {
+  "folder_exclude_patterns": ["node_modules"],
   "always_show_minimap_viewport": true,
   "auto_complete": true,
   "auto_complete_commit_on_tab": true,
