@@ -68,7 +68,7 @@ BULLETTRAIN_GIT_EXTENDED=(true)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,7 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /Users/qtd/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias noi="/usr/local/bin/noi.sh"
 export TERM="xterm-256color"
 export PATH="/usr/local/sbin:/Volumes/DATA/Download/google-cloud-sdk/bin:$PATH"
@@ -110,3 +109,18 @@ export PATH="/usr/local/sbin:/Volumes/DATA/Download/google-cloud-sdk/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Activate antigen
+source /usr/local/share/antigen/antigen.zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+# Tell Antigen that you're done.
+antigen apply
+
+source /Users/qtd/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
