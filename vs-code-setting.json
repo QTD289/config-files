@@ -34,5 +34,36 @@
     "guides.active.color.dark": "rgba(255, 255, 255, 0.5)",
     "material-icon-theme.folders.color": "#90a4ae",
     "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.activeIconPack": "react"
+    "material-icon-theme.activeIconPack": "react",
+    "editor.semanticTokenColorCustomizations": {
+    "enabled": true, // enable semantic highlighting for all themes
+    "rules": {
+      // make all symbol declarations bold
+      // "*.declaration": "#263852",
+      "property": {
+        "fontStyle": "italic",
+        "foreground": "#CCCCCC"
+      },
+      "variable": "#fff",
+      "function": {
+        "fontStyle": "bold",
+        "foreground": "#CEDB56"
+      },
+      "method": {
+        "fontStyle": "italic bold",
+        "foreground": "#CEDB56"
+      },
+      "parameter": "#D35D47",
+      "interface": {
+        "fontStyle": "underline",
+        "foreground": "#76CDD8"
+      },
+      "type": {
+        "fontStyle": "italic",
+        "foreground": "#76CDD8"
+      },
+      "enum": "#76CDD8",
+      "enumMember": "#b7e5eb"
+    }
+  },
 }
