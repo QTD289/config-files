@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/qtd/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -12,8 +12,6 @@ ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=(
   dir
   nvm
-  ruby
-  # virtualenv
   git
   cmd_exec_time
 )
@@ -88,10 +86,9 @@ export TERM="xterm-256color"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions django)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
@@ -118,28 +115,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vactive="source venv/bin/activate"
-alias pymakemigrations="python manage.py makemigrations"
-alias pymigrate="python manage.py migrate"
-alias pyshell="python manage.py shell_plus"
-alias pyrunserver="python manage.py runserver"
-alias pytest="python manage.py test"
-
-alias hemakemigrations="heroku local:run python manage.py makemigrations"
-alias hemigrate="heroku local:run python manage.py migrate"
-alias heshell="heroku local:run python manage.py shell_plus"
-alias herunserver="heroku local:run python manage.py runserver"
-alias hetest="heroku local:run python manage.py test"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(pyenv init -)"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
